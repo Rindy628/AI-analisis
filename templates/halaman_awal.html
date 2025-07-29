@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Analisis Performa Siswa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #d0e1ff, #f0f4ff);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1 {
+            font-weight: 700;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .btn-custom {
+            width: 220px;
+            height: 60px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 1rem;
+        }
+        .btn-harian {
+            background-color: #4e73df;
+            color: white;
+        }
+        .btn-akhir {
+            background-color: #1cc88a;
+            color: white;
+        }
+        .btn-custom:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container text-center">
+    <h1>🔎 AI Analisis Performa Siswa</h1>
+
+    <div class="d-flex justify-content-center gap-4">
+        <a href="{{ url_for('analisis_nilai_harian') }}" class="btn btn-custom btn-harian">
+            📘 Analisis Nilai Harian
+        </a>
+        <a href="{{ url_for('index') }}" class="btn btn-custom btn-akhir">
+            📝 Analisis Nilai Akhir
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
